@@ -15,4 +15,6 @@ Put a discription of what you're going to do here...
 - crafting system
 - loading screen
 
-## How To
+## How To Play
+Player Movement and Potentally Combat
+- Use WASD to move
