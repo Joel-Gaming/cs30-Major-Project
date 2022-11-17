@@ -4,10 +4,10 @@ Put a discription of what you're going to do here...
 
 ## Needs To Have List
 
-- thing 1
+- Object Orentatied Programming
 - thing 2
 
 ## Nice To Have List
 
-- other thing
+- music for each page
 - yet one more thing
