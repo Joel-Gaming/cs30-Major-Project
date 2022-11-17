@@ -6,6 +6,7 @@ Put a discription of what you're going to do here...
 
 - Fireworks
 - Player Class
+- Music Button
 
 ## Nice To Have List
 
