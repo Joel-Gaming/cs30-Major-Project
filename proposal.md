@@ -3,7 +3,7 @@
 Put a discription of what you're going to do here...
 
 ## What's Being Worked on
-This section will show you how to tell what is being worked one what has not been started and what is in Progress
+This section will show you how to tell what has been completed, what is being worked on and what has not been started yet
 
 - Completed (✓)
 - In Progess (x)
