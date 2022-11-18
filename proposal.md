@@ -2,6 +2,13 @@
 
 Put a discription of what you're going to do here...
 
+## What's Being Worked on
+This section will show you what is being worked one what has not been started and what is in Progress
+
+- Completed (✓)
+- In Progess (x)
+- Not started ( )
+
 ## Needs To Have List
 
 - Start Screen ( )
