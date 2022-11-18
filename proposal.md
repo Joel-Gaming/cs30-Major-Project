@@ -7,10 +7,16 @@ Put a discription of what you're going to do here...
 - Start Screen ( )
     - Title ( ),
     - Start Button ( ),
-    - 
 - Player Class ( )
+    - Move Function
+    - Display Function
 - Lose Screen ( )
+    - 
 - Win Screen ( )
+    - Fireworks class ( ),
+        - Move Function ( ),
+        - Display Function ( ),
+    - 
 
 ## Nice To Have List
 
