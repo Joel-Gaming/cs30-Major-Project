@@ -1,4 +1,4 @@
-# Proposal
+# Proposal 
 
 Put a discription of what you're going to do here...
 
@@ -11,10 +11,10 @@ Put a discription of what you're going to do here...
     - Move Function
     - Display Function
 - Lose Screen ( )
-    - Bad Trophy( )
+    - Bad Trophy( ),
 - Win Screen ( )
     - Fireworks class ( ),
-    - Good Trophy ( ),
+    - Good Trophy ( )
 
 ## Nice To Have List
 
