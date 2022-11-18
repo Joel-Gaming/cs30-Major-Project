@@ -8,8 +8,8 @@ Put a discription of what you're going to do here...
     - Title ( ),
     - Start Button ( ),
 - Player Class ( )
-    - Constructor ( )
-    - Move Function ( )
+    - Constructor ( ),
+    - Move Function ( ),
     - Display Function ( )
 - Lose Screen ( )
     - Bad Trophy( ),
@@ -49,7 +49,7 @@ This section will be split into Snaller sections so everyting is with items that
  ### Shop
 
 - Currency Systen ( )
-    - Currency Picture ( )
+    - Currency Photo ( ),
 - Shop ( )
     - Tools ( ),
     - Food ( ),
