@@ -49,7 +49,7 @@ This section will be split into Snaller sections so everyting is with items that
 - Develpor Console ( )
     - Heal Command ( ),
     - D.U.C.K. Commands ( ),
-    - W
+    - 
 - AntiCheat System ( )
     - Resets Program if someone is Cheating is detected ( ),
 
@@ -81,7 +81,8 @@ This section will be split into Snaller sections so everyting is with items that
     - Testers Scores ( ),
     - Joels Score ( )
 
-### Respawn Location
+### Home
+
 - House System ( )
     - Make Food ( ).
     - Sleep during the night ( ),
@@ -89,6 +90,7 @@ This section will be split into Snaller sections so everyting is with items that
     - Respawns at ( )
 
 ### Makes Transisions Nicer
+
 - Loading Screen ( )
 
 
