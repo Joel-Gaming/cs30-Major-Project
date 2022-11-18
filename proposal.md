@@ -18,42 +18,72 @@ Put a discription of what you're going to do here...
     - Good Trophy ( )
 
 ## Nice To Have List
+This section will be split into Snaller sections so everyting is with items that are for that section 
 
-- House System ( )
-    - Make Food.
-    - Sleep during the night ( ),
-- Develpor Console ( )
-    - Heal Command ( ),
-    - 
-- Voice Acting ( )
-    - Narraratior ( ),
-    - Joel ( ),
-    - Luke ( )
+### Combat 
+
 - Combat System ( )
     - Health Bar witch can regenerate ( ),
     - Powers/Classes ( ),
     - 
-- Loading Screen ( )
-- Achevements ( )
-- Scoreboard ( )
-    - Testers Scores ( ),
-    - Joels Score ( )
-- Sound Effects ( )
-    - Quack Sound Effect( ),
-    - Shop Enter Sound Effect ( ),
-    - Firework Sound Effect ( ),
-- Shop ( )
-    - Tools ( ),
-    - Food ( ),
-    - Weapons ( )
-- AntiCheat System ( )
-    - Resets Program if someone is Cheating is detected ( ),
 - Final Boss Fight ( )
     - Joel ( ),
     - Lizzy ( ),
     - April ( ),
     - Madi ( ),
     - Elsa ( )
+- Player Upgrades ( )
+    - Stamina Upgrade ( ),
+    - Health Upgrade ( ),
+    - Strength Upgrade ( )
+
+### Develpor 
+
+- Develpor Console ( )
+    - Heal Command ( ),
+    - D.U.C.K. Commands ( ),
+    - W
+- AntiCheat System ( )
+    - Resets Program if someone is Cheating is detected ( ),
+
+ ### Shop
+
+- Currency Systen ( )
+    - Currency Picture ( )
+- Shop ( )
+    - Tools ( ),
+    - Food ( ),
+    - Weapons ( )
+
+### Audio
+
+- Voice Acting ( )
+    - Narraratior ( ),
+    - Joel ( ),
+    - Luke ( )
+- Sound Effects ( )
+    - Quack Sound Effect( ),
+    - Shop Enter Sound Effect ( ),
+    - Firework Sound Effect ( ),
+
+### Achevments and Scoreboard
+
+- Achevements ( )
+    - Achevement List ( ),
+- Scoreboard ( )
+    - Testers Scores ( ),
+    - Joels Score ( )
+
+### Respawn Location
+- House System ( )
+    - Make Food ( ).
+    - Sleep during the night ( ),
+    - House Editor ( ),
+    - Respawns at ( )
+
+### Makes Transisions Nicer
+- Loading Screen ( )
+
 
 ## How To Play
 ### Player Controls 
