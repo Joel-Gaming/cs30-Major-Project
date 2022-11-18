@@ -4,18 +4,30 @@ Put a discription of what you're going to do here...
 
 ## Needs To Have List
 
-- Fireworks
-- Player Class
-- Music Button
+- Start Screen ( )
+- Player Class ( )
+- Lose Screen ( )
+- Win Screen ( )
 
 ## Nice To Have List
 
-- music for each page
-- shop
-- combat system
-- crafting system
-- loading screen
+- Develpor Console ( ):
+    - 
+- Voice Acting ( ):
+    - Narraratior ( ),
+    - Joel ( ),
+    - Luke ( )
+- Combat System ( );
+    - Health Bar witch can regenerate,
+    - Powers,
+    - 
+- Loading Screen ( )
+- Achevements ( )
+- Sound Effects ( )
+- Shop ( )
+- AntiCheat System ( )
+- Final Boss ( )
 
 ## How To Play
-Player Movement and Potentally Combat
+### Player Controls 
 - Use WASD to move
