@@ -8,8 +8,9 @@ Put a discription of what you're going to do here...
     - Title ( ),
     - Start Button ( ),
 - Player Class ( )
-    - Move Function
-    - Display Function
+    - Constructor ( )
+    - Move Function ( )
+    - Display Function ( )
 - Lose Screen ( )
     - Bad Trophy( ),
 - Win Screen ( )
