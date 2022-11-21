@@ -115,7 +115,7 @@ This section will be split into Smaller sections so everyting is with items that
 ### NPC Movement/Speech
 
 - NPC Movement ( )
-    - 
+    - Amber ( )
 
 ## How To Play
 ### Player Controls 
