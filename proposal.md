@@ -94,6 +94,9 @@ This section will be split into Snaller sections so everyting is with items that
 - Loading Screen ( )
     - Show some of the power types
 
+### Cutscenes
+
+- Meteor flying towards earth
 
 ## How To Play
 ### Player Controls 
