@@ -92,6 +92,7 @@ This section will be split into Snaller sections so everyting is with items that
 ### Makes Transisions Nicer
 
 - Loading Screen ( )
+    - Show some of the power types
 
 
 ## How To Play
