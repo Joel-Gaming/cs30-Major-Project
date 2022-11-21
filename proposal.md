@@ -6,7 +6,7 @@ Put a discription of what you're going to do here...
 This section will show you how to tell what has been completed, what is being worked on and what has not been started yet
 
 - Completed (✓)
-- In Progess (x)
+- In Progess (X)
 - Not started ( )
 
 ## Needs To Have List
@@ -32,7 +32,7 @@ This section will be split into Smaller sections so everyting is with items that
 - Combat System ( )
     - Health Bar witch can regenerate ( ),
     - Powers/Classes ( ),
-    - Weapons
+    - Weapons ( )
 - Final Boss Fight ( )
     - Joel ( ),
     - Lizzy ( ),
