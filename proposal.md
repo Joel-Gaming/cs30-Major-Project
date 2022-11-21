@@ -92,11 +92,11 @@ This section will be split into Snaller sections so everyting is with items that
 ### Makes Transisions Nicer
 
 - Loading Screen ( )
-    - Show some of the power types
+    - Show some of the power types ( )
 
 ### Cutscenes
 
-- Meteor flying towards earth
+- Meteor flying towards earth ( )
 
 ## How To Play
 ### Player Controls 
