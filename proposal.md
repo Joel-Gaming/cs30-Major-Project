@@ -39,6 +39,7 @@ This section will be split into Smaller sections so everyting is with items that
     - Player Location ( ),
     - Boss Locations ( ),
     - Show House Location ( ),
+    - NPC Locations ( )
 
 ### Combat 
 
