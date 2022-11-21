@@ -49,7 +49,7 @@ This section will be split into Smaller sections so everyting is with items that
 - Develpor Console ( )
     - Heal Command ( ),
     - D.U.C.K. Commands ( ),
-    - 
+    - Veiw Distance ( )
 - AntiCheat System ( )
     - Resets Program if someone is Cheating is detected ( ),
 
@@ -97,7 +97,17 @@ This section will be split into Smaller sections so everyting is with items that
 ### Cutscenes
 
 - Meteor flying towards earth ( )
+    - Voice Acting ( )
+
+### World Map
+
+- World Map ( )
+    - Player Location ( ),
+    - Boss Locations ( ),
+    - Show House Location ( ),
 
 ## How To Play
 ### Player Controls 
 - Use WASD to move
+
+### World Map Controls
