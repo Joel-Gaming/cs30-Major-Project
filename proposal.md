@@ -18,6 +18,8 @@ This section will show you how to tell what has been completed, what is being wo
     - Constructor ( ),
     - Move Function ( ),
     - Display Function ( )
+- World ( )
+    Main island ( ),
 - Lose Screen ( )
     - Bad Trophy( ),
 - Win Screen ( )
@@ -26,6 +28,17 @@ This section will show you how to tell what has been completed, what is being wo
 
 ## Nice To Have List
 This section will be split into Smaller sections so everyting is with items that are for that section 
+
+### World + Map
+
+- Other Potentail World Areas ( )
+    - Sancutary Island ( ),
+    - 
+    - Final Boss Island ( )
+- World Map ( )
+    - Player Location ( ),
+    - Boss Locations ( ),
+    - Show House Location ( ),
 
 ### Combat 
 
@@ -67,7 +80,7 @@ This section will be split into Smaller sections so everyting is with items that
 - Voice Acting ( )
     - Narraratior ( ),
     - Joel ( ),
-    - Luke ( )
+    - Luke ( ),
 - Sound Effects ( )
     - Quack Sound Effect( ),
     - Shop Enter Sound Effect ( ),
@@ -99,12 +112,10 @@ This section will be split into Smaller sections so everyting is with items that
 - Meteor flying towards earth ( )
     - Voice Acting ( ),
 
-### World Map
+### NPC Movement/Speech
 
-- World Map ( )
-    - Player Location ( ),
-    - Boss Locations ( ),
-    - Show House Location ( ),
+- NPC Movement ( )
+    - 
 
 ## How To Play
 ### Player Controls 
