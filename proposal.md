@@ -25,14 +25,14 @@ This section will show you how to tell what has been completed, what is being wo
     - Good Trophy ( )
 
 ## Nice To Have List
-This section will be split into Snaller sections so everyting is with items that are for that section 
+This section will be split into Smaller sections so everyting is with items that are for that section 
 
 ### Combat 
 
 - Combat System ( )
     - Health Bar witch can regenerate ( ),
     - Powers/Classes ( ),
-    - 
+    - Weapons
 - Final Boss Fight ( )
     - Joel ( ),
     - Lizzy ( ),
