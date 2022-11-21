@@ -14,6 +14,7 @@ This section will show you how to tell what has been completed, what is being wo
 - Start Screen ( )
     - Title ( ),
     - Start Button ( ),
+    - How to Play button ( )
 - Player Class ( )
     - Constructor ( ),
     - Move Function ( ),
