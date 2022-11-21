@@ -33,7 +33,6 @@ This section will be split into Smaller sections so everyting is with items that
 
 - Other Potentail World Areas ( )
     - Sancutary Island ( ),
-    - 
     - Final Boss Island ( )
 - World Map ( )
     - Player Location ( ),
@@ -122,4 +121,3 @@ This section will be split into Smaller sections so everyting is with items that
 - Use WASD to move
 
 ### World Map Controls
-- 
