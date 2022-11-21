@@ -92,12 +92,12 @@ This section will be split into Smaller sections so everyting is with items that
 ### Makes Transisions Nicer
 
 - Loading Screen ( )
-    - Show some of the power types ( )
+    - Show some of the power types ( ),
 
 ### Cutscenes
 
 - Meteor flying towards earth ( )
-    - Voice Acting ( )
+    - Voice Acting ( ),
 
 ### World Map
 
@@ -111,3 +111,4 @@ This section will be split into Smaller sections so everyting is with items that
 - Use WASD to move
 
 ### World Map Controls
+- 
