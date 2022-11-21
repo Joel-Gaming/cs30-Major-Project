@@ -58,6 +58,10 @@ This section will be split into Smaller sections so everyting is with items that
     - Health Upgrade ( ),
     - Strength Upgrade ( )
 
+### Voice Actinng/Sound Effects Testing
+
+- Sound Test Button ( )
+
 ### Develpor 
 
 - Develpor Console ( )
@@ -116,7 +120,9 @@ This section will be split into Smaller sections so everyting is with items that
 ### NPC Movement/Speech
 
 - NPC Movement ( )
-    - Amber ( )
+    - Amber ( ),
+    - Water Gaurds ( ),
+    - Fire Gaurds ( ),
 
 ## How To Play
 ### Player Controls 
