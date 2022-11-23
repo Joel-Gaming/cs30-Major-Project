@@ -126,6 +126,8 @@ This section will be split into Smaller sections so everyting is with items that
 
 ## How To Play
 ### Player Controls 
+
 - Use WASD to move
+- Use I to interact with itemms and npcs
 
 ### World Map Controls
