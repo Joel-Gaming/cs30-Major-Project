@@ -1,6 +1,6 @@
 # Proposal 
 
-Put a discription of what you're going to do here...
+An open world game where you can do quests to progress in the game andd work your way to the final boss fight to win the game If i have time to do everything that I want to make
 
 ## What's Being Worked on
 This section will show you how to tell what has been completed, what is being worked on and what has not been started yet
