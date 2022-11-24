@@ -37,8 +37,8 @@ let backgroundColor = "lightgray";
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  buttonOne = new Button(width/4, 300, 651, 75);
-  buttonTwo = new Button(width/4, 600, 651, 75);
+  buttonOne = new Button(windowWidth/4, 300, 651, 75);
+  buttonTwo = new Button(windowWidth/4, 600, 651, 75);
 }
 
 function draw() {
@@ -49,9 +49,9 @@ function draw() {
 
 function mousePressed() {
   if (buttonOne.isInside(mouseX, mouseY)) {
-    sendTo = "world.js";
+    "world.js";
   }
   if (buttonTwo.isInside(mouseX, mouseY)) {
-    sendTo = "howtoplay.js";
+    "howtoplay.js";
   }
 }
