@@ -49,7 +49,8 @@ function draw() {
 
 function mousePressed() {
   if (buttonOne.isInside(mouseX, mouseY)) {
-    "world.js";
+    <input id="btntest" type="button" value="Check" 
+       onclick="window.location.href = 'http://www.google.com'" />
   }
   if (buttonTwo.isInside(mouseX, mouseY)) {
     "howtoplay.js";
