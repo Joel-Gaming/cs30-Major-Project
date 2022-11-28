@@ -34,7 +34,6 @@ let buttonOne;
 let buttonTwo;
 let backgroundColor = "lightgray";
 
-
 function setup() {
   createCanvas(windowWidth, windowHeight);
   buttonOne = new Button(windowWidth/4, 300, 651, 75);
