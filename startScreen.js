@@ -33,6 +33,7 @@ class Button {
 let buttonOne;
 let buttonTwo;
 let backgroundColor = "lightgray";
+let state;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -42,15 +43,19 @@ function setup() {
 
 function draw() {
   background(backgroundColor);
-  buttonOne.display();
-  buttonTwo.display();
+  if (state === "start") {
+    buttonOne.display();
+    buttonTwo.display();
+  }
 }
 
 function mousePressed() {
+  let tempState;
   if (buttonOne.isInside(mouseX, mouseY)) {
-    "world.js";
+    tempState = "play";
   }
   if (buttonTwo.isInside(mouseX, mouseY)) {
-    "howtoplay.js";
+    tempState = "htp";
   }
+  return tempState;
 }
