@@ -1,6 +1,6 @@
 // Start Screen
 
-class Button {
+export class Button {
   constructor(x, y, width, height) {
     this.x = x;
     this.y = y;
@@ -30,9 +30,9 @@ class Button {
   }
 }
 
-let buttonOne;
-let buttonTwo;
-let backgroundColor = "lightgray";
+export let buttonOne;
+export let buttonTwo;
+export let backgroundColor = "lightgray";
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
