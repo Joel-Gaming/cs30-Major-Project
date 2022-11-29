@@ -1,4 +1,4 @@
-// Major Project
+// Start Screen
 
 class Button {
   constructor(x, y, width, height) {
