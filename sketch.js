@@ -2,6 +2,11 @@
 // November 23rd 2022
 // Joel Penner
 
+
+import {Button} from './startScreen.js';
+import {buttonOne} from './startScreen.js';
+import {buttonTwo} from './startScreen.js';
+
 let state = "start";
 
 function setup() {
@@ -10,4 +15,6 @@ function setup() {
 
 function draw() {
   background(220);
+  buttonOne.display()
+  buttonTwo.display()
 }
