@@ -41,7 +41,7 @@ function setup() {
 }
 
 function draw() {
-  background(backgroundColor) {
+  background(backgroundColor);
   buttonOne.display();
   buttonTwo.display();
 }

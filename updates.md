@@ -13,3 +13,6 @@ Today I tried to get the buttons to work again still no succsess
 
 ### November 29th 2022
 Updated Proposal.md to add more detail to World sectoin
+
+### November 30th 2022
+I got the buttons to work today
