@@ -16,3 +16,8 @@ Updated Proposal.md to add more detail to World sectoin
 
 ### November 30th 2022
 I got the buttons to work today
+
+## December
+
+### December 1st 2022
+Today I added the player class and got the player to be able to move and show up on the screen. I have not made the world yet thought

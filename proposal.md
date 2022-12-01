@@ -13,12 +13,12 @@ This section will show you how to tell what has been completed, what is being wo
 
 - Start Screen (X)
     - Title ( ),
-    - Start Button (X),
+    - Start Button (✓),
     - How to Play button (X)
-- Player Class ( )
-    - Constructor ( ),
-    - Move Function ( ),
-    - Display Function ( )
+- Player Class (✓)
+    - Constructor (✓),
+    - Move Function (✓),
+    - Display Function (✓)
 - World ( )
     - Main island ( )
         - Bank Outside ( ),

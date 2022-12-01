@@ -34,20 +34,67 @@ class Button {
   }
 }
 
+class Player {
+  constructor(x, y, dx, dy, side) {
+    this.x = x;
+    this.y = y;
+    this.dx = dx;
+    this.dy = dy;
+    this.side = side;
+  }
+  
+  move() {
+    if (keyIsDown(87)) { //w
+      this.y -= this.dy;
+    }
+    if (keyIsDown(83)) { //s
+      this.y += this.dy;
+    }
+    if (keyIsDown(68)) { //d
+      this.x += this.dx;
+    }
+    if (keyIsDown(65)) { //a
+      this.x -= this.dx;
+    }
+  }
+
+  display() {
+    square(this.x, this.y, this.side);
+  }
+}
+
+class Island {
+  constructor() {
+    
+  }
+
+  display() {
+
+  }
+}
+
 // global varables
 let state = "start";
 let buttonOne;
 let buttonTwo;
 let backgroundColor = "lightgray";
-let htpButton;
+let backButton;
+let practiceButton;
+let player;
+let practiceIsland;
 
+// set up
 function setup() {
   createCanvas(windowWidth, windowHeight);
   buttonOne = new Button(windowWidth/4, 300, 651, 75);
   buttonTwo = new Button(windowWidth/4, 600, 651, 75);
-  htpButton = new Button(0, windowHeight-50, 150, 50);
+  backButton = new Button(0, windowHeight-50, 150, 50);
+  practiceButton = new Button(windowWidth-150, windowHeight-50, 150, 50);
+  player = new Player(windowWidth/2, windowHeight/2, 2, 2, 25);
+  practiceIsland = new Island();
 }
 
+// draw
 function draw() {
   background(backgroundColor);
   if (state === "start") {
@@ -55,7 +102,17 @@ function draw() {
     buttonTwo.display();
   }
   if (state === "htp") {
-    htpButton.display();
+    backButton.display();
+    practiceButton.display();
+  }
+  if (state === "play") {
+    player.move();
+    player.display();
+  }
+  if (state === "practice") {
+    practiceIsland.display();
+    player.move();
+    player.display();
   }
 }
 
@@ -69,8 +126,11 @@ function mousePressed() {
     }
   }
   if (state ===  "htp") {
-    if (htpButton.isInside(mouseX, mouseY)) {
+    if (backButton.isInside(mouseX, mouseY)) {
       state = "start";
     }
-  }
+    if (practiceButton.isInside(mouseX, mouseY)) {
+      state = "practice";
+    }
+  }  
 }
