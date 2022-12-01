@@ -64,8 +64,11 @@ class Player {
 }
 
 class Island {
-  constructor() {
-    
+  constructor(x, y, beachimg, grassimg, theGrid) {
+    this.x = x;
+    this.y = y;
+    this.sandIMG = beachimg;
+    this.grassIMG = grassimg;
   }
 
   display() {
@@ -82,6 +85,11 @@ let backButton;
 let practiceButton;
 let player;
 let practiceIsland;
+let island1Grid = [[11111111111111111111111111]
+                   [12222222222222222222222221]
+                   [12222222222222222222222221]
+                   [12222222111111111122222221]];
+                   []];
 
 // set up
 function setup() {
@@ -91,7 +99,7 @@ function setup() {
   backButton = new Button(0, windowHeight-50, 150, 50);
   practiceButton = new Button(windowWidth-150, windowHeight-50, 150, 50);
   player = new Player(windowWidth/2, windowHeight/2, 2, 2, 25);
-  practiceIsland = new Island();
+  practiceIsland = new Island(windowwidth/4);
 }
 
 // draw
