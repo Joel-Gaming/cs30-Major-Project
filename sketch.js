@@ -65,7 +65,11 @@ class Player {
 
 class Island {
   constructor() {
-    
+    this.beaches = [];
+    this.grass = [];
+    this.water = [];
+    this.tempBeach = [];
+    this.tempGrass = [];
   }
 
   display() {
