@@ -64,17 +64,27 @@ class Player {
 }
 
 class Island {
-  constructor(beachimg, grassimg, theArray) {
-    this.tempArray = theArray;
-    this.beaches = [];
-    this.grass = [];
-    this.water = [];
+  constructor(beachimg, grassimg, waterimg, theArray) {
+    this.theIsland = theArray;
     this.sandIMG = beachimg;
     this.grassIMG = grassimg;
+    this.waterIMG = waterimg;
   }
 
   display() {
-
+    for (let i = 0; i < this.theIsland; i++) {
+      for (let j = 0; j < this.theIsland[i]; j++) {
+        if (this.theIsland[i][j] === 0) {
+          image(this.waterImg, this.theIsland[j], this.theIsland[i]);
+        }
+        if (this.theIsland[i][j] === 1) {
+          image(this.sandIMG, this.theIsland[j], this.theIsland[i]);
+        }
+        if (this.theIsland[i][j] === 2) {
+          image(this.grassIMG, this.theIsland[j], this.theIsland[i]);
+        }
+      }
+    }
   }
 }
 
@@ -88,6 +98,18 @@ let practiceButton;
 let player;
 let practiceIsland;
 
+// photos
+let oceanImg;
+let sandImg;
+let grassImg;
+
+// preload
+function preload() {
+  oceanImg = "images/ocean.png";
+  sandImg = "images/sand.png";
+  grassImg = "images/grass.png";
+}
+
 // set up
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -96,7 +118,7 @@ function setup() {
   backButton = new Button(0, windowHeight-50, 150, 50);
   practiceButton = new Button(windowWidth-150, windowHeight-50, 150, 50);
   player = new Player(windowWidth/2, windowHeight/2, 2, 2, 25);
-  practiceIsland = new Island(windowWidth/4);
+  practiceIsland = new Island(sandImg, grassImg, oceanImg);
 }
 
 // draw
@@ -115,7 +137,6 @@ function draw() {
     player.display();
   }
   if (state === "practice") {
-    practiceIsland.display();
     player.move();
     player.display();
   }
