@@ -64,8 +64,8 @@ class Player {
 }
 
 class Island {
-  constructor(beachimg, grassimg, waterimg, theArray) {
-    this.theIsland = theArray;
+  constructor(beachimg, grassimg, waterimg) {
+    this.theIsland;
     this.sandIMG = beachimg;
     this.grassIMG = grassimg;
     this.waterIMG = waterimg;
