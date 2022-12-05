@@ -73,16 +73,6 @@ class Island {
     this.grassIMG = grassimg;
   }
 
-  loadIslandInfo() {
-    for (let i = 0; i < this.tempArray; i++) {
-      for (let j = 0; j < this.tempArray; j++) {
-        if (this.tempArray[i][j] = 0) {
-          this.water += this.tempArray.slice([i], 1);
-        }
-      }
-    }
-  }
-
   display() {
 
   }
@@ -97,12 +87,6 @@ let backButton;
 let practiceButton;
 let player;
 let practiceIsland;
-//island layouts
-let island1Grid = [[11111111111111111111111111]
-  [12222222222222222222222221]
-  [12222222222222222222222221]
-  [12222222111111111122222221]
-  [12222222100000000122222221]];
 
 // set up
 function setup() {
