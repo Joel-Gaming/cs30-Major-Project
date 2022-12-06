@@ -139,6 +139,7 @@ function draw() {
   if (state === "practice") {
     player.move();
     player.display();
+    practiceIsland.display();
   }
 }
 
