@@ -65,7 +65,12 @@ class Player {
 
 class Island {
   constructor(beachimg, grassimg, waterimg) {
-    this.theIsland;
+    this.theIsland = [[1111111111111111],
+      [1222222222222221],
+      [1222211111122221],
+      [1111111111111111],
+      [1222211111122221],
+      [1111111111111111]];
     this.sandIMG = beachimg;
     this.grassIMG = grassimg;
     this.waterIMG = waterimg;
