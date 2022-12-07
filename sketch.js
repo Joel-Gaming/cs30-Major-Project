@@ -5,9 +5,9 @@
 
 // classes
 class Button {
-  constructor(x, y, width, height) {
+  constructor(x, this.i, width, height) {
     this.x = x;
-    this.y = y;
+    this.this.i = this.i;
     this.width = width;
     this.height = height;
     this.color = "red";
@@ -21,23 +21,23 @@ class Button {
     else {
       fill(this.color);
     }
-    rect(this.x, this.y, this.width, this.height);
+    rect(this.x, this.this.i, this.width, this.height);
   }
 
-  isInside(x, y) {
+  isInside(x, this.i) {
     let leftSide = this.x;
     let rightSide = this.x + this.width;
-    let topSide = this.y;
-    let bottomSide = this.y + this.height;
+    let topSide = this.this.i;
+    let bottomSide = this.this.i + this.height;
 
-    return x > leftSide && x < rightSide && y > topSide && y < bottomSide;
+    return x > leftSide && x < rightSide && this.i > topSide && this.i < bottomSide;
   }
 }
 
 class Player {
-  constructor(x, y, dx, dy, side) {
+  constructor(x, this.i, dx, dy, side) {
     this.x = x;
-    this.y = y;
+    this.this.i = this.i;
     this.dx = dx;
     this.dy = dy;
     this.side = side;
@@ -45,10 +45,10 @@ class Player {
   
   move() {
     if (keyIsDown(87)) { //w
-      this.y -= this.dy;
+      this.this.i -= this.dy;
     }
     if (keyIsDown(83)) { //s
-      this.y += this.dy;
+      this.this.i += this.dy;
     }
     if (keyIsDown(68)) { //d
       this.x += this.dx;
@@ -59,34 +59,33 @@ class Player {
   }
 
   display() {
-    square(this.x, this.y, this.side);
+    square(this.x, this.this.i, this.side);
   }
 }
 
 class Island {
-  constructor(beachimg, grassimg, waterimg) {
-    this.theIsland = [[1111111111111111],
-      [1222222222222221],
-      [1222211111122221],
-      [1111111111111111],
-      [1222211111122221],
-      [1111111111111111]];
+  constructor(theArray, beachimg, grassimg, waterimg) {
+    this.theIsland = theArray;
     this.sandIMG = beachimg;
     this.grassIMG = grassimg;
     this.waterIMG = waterimg;
+    this.cellWidth = 10;
+    this.cellHeight = 10;
+    this.i = 0;
+    this.j = 0;
   }
 
   display() {
-    for (let i = 0; i < this.theIsland; i++) {
-      for (let j = 0; j < this.theIsland[i]; j++) {
-        if (this.theIsland[i][j] === 0) {
-          image(this.waterImg, this.theIsland[j], this.theIsland[i]);
+    for (this.i<this.theIsland.length; this.i++) {
+      for (this.j<this.theIsland[this.i].length; this.j++) {
+        if (this.theIsland[this.i][x] === 0) {
+          image(this.waterIMG, this.theIsland[x], this.theIsland[this.i]);
         }
-        if (this.theIsland[i][j] === 1) {
-          image(this.sandIMG, this.theIsland[j], this.theIsland[i]);
+        else if (this.TheIsland[this.i][x] === 1) {
+          image(this.sandIMG, this.theIsland[x], this.theIsland[this.i]);
         }
-        if (this.theIsland[i][j] === 2) {
-          image(this.grassIMG, this.theIsland[j], this.theIsland[i]);
+        else if (this.theIsland[this.i][x] === 2) {
+          image(this.grassIMG, this.theIsland[x], this.theIsland[this.i]);
         }
       }
     }
@@ -102,6 +101,17 @@ let backButton;
 let practiceButton;
 let player;
 let practiceIsland;
+
+//Islands layouts
+let island0Map = [[111111111111111],
+  [122222222222221],
+  [122211111112221],
+  [122210000012221],
+  [122210000012221],
+  [122210000012221],
+  [122211111112221],
+  [122222222222221],
+  [111111111111111]];
 
 // photos
 let oceanImg;
@@ -123,7 +133,7 @@ function setup() {
   backButton = new Button(0, windowHeight-50, 150, 50);
   practiceButton = new Button(windowWidth-150, windowHeight-50, 150, 50);
   player = new Player(windowWidth/2, windowHeight/2, 2, 2, 25);
-  practiceIsland = new Island(sandImg, grassImg, oceanImg);
+  practiceIsland = new Island(island0Map, sandImg, grassImg, oceanImg);
 }
 
 // draw
