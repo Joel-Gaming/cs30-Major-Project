@@ -5,9 +5,9 @@
 
 // classes
 class Button {
-  constructor(x, this.i, width, height) {
+  constructor(x, y, width, height) {
     this.x = x;
-    this.this.i = this.i;
+    this.y = y;
     this.width = width;
     this.height = height;
     this.color = "red";
@@ -24,20 +24,20 @@ class Button {
     rect(this.x, this.this.i, this.width, this.height);
   }
 
-  isInside(x, this.i) {
+  isInside(x, y) {
     let leftSide = this.x;
     let rightSide = this.x + this.width;
-    let topSide = this.this.i;
-    let bottomSide = this.this.i + this.height;
+    let topSide = this.y;
+    let bottomSide = this.y + this.height;
 
     return x > leftSide && x < rightSide && this.i > topSide && this.i < bottomSide;
   }
 }
 
 class Player {
-  constructor(x, this.i, dx, dy, side) {
+  constructor(x, y, dx, dy, side) {
     this.x = x;
-    this.this.i = this.i;
+    this.y = y;
     this.dx = dx;
     this.dy = dy;
     this.side = side;
@@ -45,10 +45,10 @@ class Player {
   
   move() {
     if (keyIsDown(87)) { //w
-      this.this.i -= this.dy;
+      this.y -= this.dy;
     }
     if (keyIsDown(83)) { //s
-      this.this.i += this.dy;
+      this.y += this.dy;
     }
     if (keyIsDown(68)) { //d
       this.x += this.dx;
