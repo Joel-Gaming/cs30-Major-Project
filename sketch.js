@@ -21,7 +21,7 @@ class Button {
     else {
       fill(this.color);
     }
-    rect(this.x, this.this.i, this.width, this.height);
+    rect(this.x, this.y, this.width, this.height);
   }
 
   isInside(x, y) {
@@ -30,7 +30,7 @@ class Button {
     let topSide = this.y;
     let bottomSide = this.y + this.height;
 
-    return x > leftSide && x < rightSide && this.i > topSide && this.i < bottomSide;
+    return x > leftSide && x < rightSide && y > topSide && y < bottomSide;
   }
 }
 
@@ -59,36 +59,7 @@ class Player {
   }
 
   display() {
-    square(this.x, this.this.i, this.side);
-  }
-}
-
-class Island {
-  constructor(theArray, beachimg, grassimg, waterimg) {
-    this.theIsland = theArray;
-    this.sandIMG = beachimg;
-    this.grassIMG = grassimg;
-    this.waterIMG = waterimg;
-    this.cellWidth = 10;
-    this.cellHeight = 10;
-    this.i = 0;
-    this.j = 0;
-  }
-
-  display() {
-    for (this.i<this.theIsland.length; this.i++;) {
-      for (this.j<this.theIsland[this.i].length; this.j++;) {
-        if (this.theIsland[this.i][this.j] === 0) {
-          image(this.waterIMG, this.theIsland[this.j], this.theIsland[this.i]);
-        }
-        else if (this.TheIsland[this.i][this.j] === 1) {
-          image(this.sandIMG, this.theIsland[this.j], this.theIsland[this.i]);
-        }
-        else if (this.theIsland[this.i][this.j] === 2) {
-          image(this.grassIMG, this.theIsland[this.j], this.theIsland[this.i]);
-        }
-      }
-    }
+    square(this.x, this.y, this.side);
   }
 }
 
@@ -100,18 +71,6 @@ let backgroundColor = "lightgray";
 let backButton;
 let practiceButton;
 let player;
-let practiceIsland;
-
-//Islands layouts
-let island0Map = [[111111111111111],
-  [122222222222221],
-  [122211111112221],
-  [122210000012221],
-  [122210000012221],
-  [122210000012221],
-  [122211111112221],
-  [122222222222221],
-  [111111111111111]];
 
 // photos
 let oceanImg;
@@ -132,8 +91,7 @@ function setup() {
   buttonTwo = new Button(windowWidth/4, 600, 651, 75);
   backButton = new Button(0, windowHeight-50, 150, 50);
   practiceButton = new Button(windowWidth-150, windowHeight-50, 150, 50);
-  player = new Player(windowWidth/2, windowHeight/2, 2, 2, 25);
-  practiceIsland = new Island(island0Map, sandImg, grassImg, oceanImg);
+  player = new Player(windowWidth/2, windowHeight/2, 3, 3, 25);
 }
 
 // draw
@@ -146,15 +104,35 @@ function draw() {
   if (state === "htp") {
     backButton.display();
     practiceButton.display();
+    textSize(25);
+    //Section Headers
+    text("Player:", 0, 25);
+    text("Map:", 0, 150);
+    text("Combat:", 0, 250);
+    fill("black");
+    // Player Contorls
+    text("Use WASD to move", 10, 50);
+    text("Use I to interact", 10, 75);
+    text("Use P to use Pasive Skill", 10, 100);
+    text("Use R to open Player Upgrades", 10, 125);
+    // Map Controls
+    text("Use M to open map", 10, 175);
+    text("Use T to teleport", 10, 200);
+    text("Use Z to zoom", 10, 225);
+    // Combat Controls
+    text("Use Y to do basic attack", 10, 275);
+    text("Use B to do Block", 10, 300);
+    text("Use C to use Basic Skill", 10, 325);
+    text("Use Q to use Secendary Skill", 10, 350);
   }
   if (state === "play") {
     player.move();
     player.display();
   }
   if (state === "practice") {
+    fill("blue");
     player.move();
     player.display();
-    practiceIsland.display();
   }
 }
 
