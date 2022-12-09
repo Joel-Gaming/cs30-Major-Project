@@ -11,10 +11,10 @@ This section will show you how to tell what has been completed, what is being wo
 
 ## Needs To Have List
 
-- Start Screen (X)
-    - Title ( ),
+- Start Screen (✓)
+    - Title (✓),
     - Start Button (✓),
-    - How to Play button (X)
+    - How to Play button (✓)
 - Player Class (✓)
     - Constructor (✓),
     - Move Function (✓),
