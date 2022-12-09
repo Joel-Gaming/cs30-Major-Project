@@ -98,6 +98,7 @@ function setup() {
 function draw() {
   background(backgroundColor);
   if (state === "start") {
+    text("Joel's Story", windowWidth/2, 100);
     buttonOne.display();
     buttonTwo.display();
   }
