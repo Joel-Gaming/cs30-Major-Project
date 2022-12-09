@@ -106,6 +106,7 @@ function draw() {
     practiceButton.display();
     textSize(25);
     //Section Headers
+    fill("red")
     text("Player:", 0, 25);
     text("Map:", 0, 150);
     text("Combat:", 0, 275);
