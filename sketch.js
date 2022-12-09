@@ -76,16 +76,16 @@ class Island {
   }
 
   display() {
-    for (this.i<this.theIsland.length; this.i++) {
-      for (this.j<this.theIsland[this.i].length; this.j++) {
-        if (this.theIsland[this.i][x] === 0) {
-          image(this.waterIMG, this.theIsland[x], this.theIsland[this.i]);
+    for (this.i<this.theIsland.length; this.i++;) {
+      for (this.j<this.theIsland[this.i].length; this.j++;) {
+        if (this.theIsland[this.i][this.j] === 0) {
+          image(this.waterIMG, this.theIsland[this.j], this.theIsland[this.i]);
         }
-        else if (this.TheIsland[this.i][x] === 1) {
-          image(this.sandIMG, this.theIsland[x], this.theIsland[this.i]);
+        else if (this.TheIsland[this.i][this.j] === 1) {
+          image(this.sandIMG, this.theIsland[this.j], this.theIsland[this.i]);
         }
-        else if (this.theIsland[this.i][x] === 2) {
-          image(this.grassIMG, this.theIsland[x], this.theIsland[this.i]);
+        else if (this.theIsland[this.i][this.j] === 2) {
+          image(this.grassIMG, this.theIsland[this.j], this.theIsland[this.i]);
         }
       }
     }
