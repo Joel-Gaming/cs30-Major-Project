@@ -108,7 +108,7 @@ function draw() {
     //Section Headers
     text("Player:", 0, 25);
     text("Map:", 0, 150);
-    text("Combat:", 0, 250);
+    text("Combat:", 0, 275);
     fill("black");
     // Player Contorls
     text("Use WASD to move", 10, 50);
@@ -118,12 +118,13 @@ function draw() {
     // Map Controls
     text("Use M to open map", 10, 175);
     text("Use T to teleport", 10, 200);
-    text("Use Z to zoom", 10, 225);
+    text("Use Z to zoom in", 10, 225);
+    text("Use x to zoom out", 10, 250);
     // Combat Controls
-    text("Use Y to do basic attack", 10, 275);
-    text("Use B to do Block", 10, 300);
-    text("Use C to use Basic Skill", 10, 325);
-    text("Use Q to use Secendary Skill", 10, 350);
+    text("Use Y to do basic attack", 10, 300);
+    text("Use B to do Block", 10, 325);
+    text("Use C to use Basic Skill", 10, 350);
+    text("Use Q to use Secendary Skill", 10, 375);
   }
   if (state === "play") {
     player.move();
