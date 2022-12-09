@@ -121,12 +121,13 @@ function draw() {
     text("Use M to open map", 10, 175);
     text("Use T to teleport", 10, 200);
     text("Use Z to zoom in", 10, 225);
-    text("Use x to zoom out", 10, 250);
+    text("Use X to zoom out", 10, 250);
     // Combat Controls
     text("Use Y to do basic attack", 10, 300);
     text("Use B to do Block", 10, 325);
     text("Use C to use Basic Skill", 10, 350);
     text("Use Q to use Secendary Skill", 10, 375);
+    // 
   }
   if (state === "play") {
     player.move();
