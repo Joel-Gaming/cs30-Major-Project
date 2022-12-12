@@ -63,6 +63,39 @@ class Player {
   }
 }
 
+class Island {
+  constructor(theIsland, beachImg, waterImg, grassImg) {
+    // Island Design
+    this.IslandLayout = theIsland;
+    // Images
+    this.sandIMG = beachImg;
+    this.waterIMG = waterImg;
+    this.grassIMG = grassImg;
+    // Rows
+    this.Rows = 0;
+    // Cols
+    this.Cols = 0;
+  }
+
+  displayGrid(grid) {
+    for (let y=0; y<this.Rows; y++) {
+      for (let x=0; x<this.Cols; x++) {
+        if (grid[y][x] === 0) {
+          // fill("white");
+          image(this.waterIMG, x*this.Cols, y*this.Rows, this.Cols, this.Rows);
+        }
+        else if (grid[y][x] === 1) {
+          // fill("black");
+          image(this.sandIMG, x*this.Cols, y*this.Rows, this.Cols, this.Rows);
+        }
+        else if (grid[y][x] === 2) {
+          // fill("black");
+          image(this.grassIMG, x*this.Cols, y*this.Rows, this.Cols, this.Rows);
+        }
+      }
+    }
+  }
+}
 // global varables
 let state = "start";
 let buttonOne;
@@ -71,11 +104,23 @@ let backgroundColor = "lightgray";
 let backButton;
 let practiceButton;
 let player;
+let mainIsland;
 
 // photos
 let oceanImg;
 let sandImg;
 let grassImg;
+
+// Island layouts
+let island1map = [[1111111111111111],
+  [1222222222222221],
+  [1222111111112221],
+  [1222100000012221],
+  [1222100000012221],
+  [1222100000012221],
+  [1222111111112221],
+  [1222222222222221],
+  [1111111111111111]];
 
 // preload
 function preload() {
@@ -92,13 +137,16 @@ function setup() {
   backButton = new Button(0, windowHeight-50, 150, 50);
   practiceButton = new Button(windowWidth-150, windowHeight-50, 150, 50);
   player = new Player(windowWidth/2, windowHeight/2, 3, 3, 25);
+  mainIsland = new Island(island1map, sandImg, oceanImg, grassImg);
 }
 
 // draw
 function draw() {
   background(backgroundColor);
   if (state === "start") {
-    text("Joel's Story", windowWidth/2, 100);
+    fill("red");
+    textSize(50);
+    text("Joel's Story", windowWidth/2-150, 100);
     buttonOne.display();
     buttonTwo.display();
   }
@@ -107,7 +155,7 @@ function draw() {
     practiceButton.display();
     textSize(25);
     //Section Headers
-    fill("red")
+    fill("red");
     text("Player:", 0, 25);
     text("Map:", 0, 150);
     text("Combat:", 0, 275);
@@ -127,11 +175,11 @@ function draw() {
     text("Use B to do Block", 10, 325);
     text("Use C to use Basic Skill", 10, 350);
     text("Use Q to use Secendary Skill", 10, 375);
-    // 
   }
-  if (state === "play") {
+  if (state === "play") { 
     player.move();
     player.display();
+    mainIsland.display();
   }
   if (state === "practice") {
     fill("blue");
