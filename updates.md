@@ -21,3 +21,6 @@ I got the buttons to work today
 
 ### December 1st 2022
 Today I added the player class and got the player to be able to move and show up on the screen. I have not made the world yet thought
+
+## December 9th 2022
+I Added how to play information 
