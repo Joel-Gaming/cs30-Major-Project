@@ -23,4 +23,7 @@ I got the buttons to work today
 Today I added the player class and got the player to be able to move and show up on the screen. I have not made the world yet thought
 
 ## December 9th 2022
-I Added how to play information 
+I Added how to play information and added a temparary title
+
+## December 12th 2022
+I made my temoarary title bigger
