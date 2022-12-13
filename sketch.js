@@ -163,7 +163,7 @@ function draw() {
     text("Combat:", 0, 275);
     text("Stealth:", 0, 400);
     text("Shop:", 0, 450);
-    text("Devloper:", 0, 550);
+    text("Devloper:", 0, 575);
     fill("black");
     // Player Contorls
     text("Use WASD to move", 10, 50);
@@ -186,8 +186,10 @@ function draw() {
     text("Use Arrow Keys to Browse Items", 10, 475);
     text("Use G to open Shop", 10, 500);
     text("Use U to Select", 10, 525);
+    text("Use T to toss a coin", 10, 550);
     // Devolper Console
-    text("Use / to start entering a command", 10, 575);
+    text("Use / to start entering a command", 10, 600);
+    
   }
   if (state === "practice") {
     fill("blue");
