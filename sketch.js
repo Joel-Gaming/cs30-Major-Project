@@ -64,38 +64,36 @@ class Player {
 }
 
 class Island {
-  constructor(theIsland, beachImg, waterImg, grassImg) {
-    // Island Design
-    this.IslandLayout = theIsland;
-    // Images
-    this.sandIMG = beachImg;
-    this.waterIMG = waterImg;
-    this.grassIMG = grassImg;
-    // Rows
-    this.Rows = 0;
-    // Cols
-    this.Cols = 0;
+  constructor(theIsland, waterimg, sandimg, grassimg) {
+    this.theIsland = theIsland;
+    this.waterIMG = waterimg;
+    this.sandIMG = sandimg;
+    this.grassIMG = grassimg;
   }
 
-  displayGrid(grid) {
-    for (let y=0; y<this.Rows; y++) {
-      for (let x=0; x<this.Cols; x++) {
-        if (grid[y][x] === 0) {
+  display() {
+    let cellWidth = width / this.theIsland[0].length;
+    let cellHeight = height / this.theIsland.length;
+    for (let y=0; y<this.theIsland.length; y++) {
+      for (let x=0; x<this.theIsland[y].length; x++) {
+        if (this.theIsland[y][x] === 0) {
           // fill("white");
-          image(this.waterIMG, x*this.Cols, y*this.Rows, this.Cols, this.Rows);
+          image(this.waterIMG, y*cellWidth, x*cellHeight, cellWidth, cellHeight);
         }
-        else if (grid[y][x] === 1) {
+        else if (this.theIsland[y][x] === 1) {
           // fill("black");
-          image(this.sandIMG, x*this.Cols, y*this.Rows, this.Cols, this.Rows);
+          image(this.sandIMG, y*cellWidth, x*cellHeight, cellWidth, cellHeight);
         }
-        else if (grid[y][x] === 2) {
-          // fill("black");
-          image(this.grassIMG, x*this.Cols, y*this.Rows, this.Cols, this.Rows);
+        else if (this.theIsland[y][x] === 2) {
+          // fill("green");
+          image(this.grassIMG, y*cellWidth, x*cellHeight, cellWidth, cellHeight);
         }
+        // rect(x*cellWidth, y*cellHeight, cellWidth, cellHeight);
       }
     }
-  }
+  }  
 }
+
 // global varables
 let state = "start";
 let buttonOne;
@@ -112,10 +110,9 @@ let sandImg;
 let grassImg;
 
 // Island layouts
-let island1map = [[1111111111111111],
+let island1grid = [[1111111111111111],
   [1222222222222221],
   [1222111111112221],
-  [1222100000012221],
   [1222100000012221],
   [1222100000012221],
   [1222111111112221],
@@ -137,7 +134,7 @@ function setup() {
   backButton = new Button(0, windowHeight-50, 150, 50);
   practiceButton = new Button(windowWidth-150, windowHeight-50, 150, 50);
   player = new Player(windowWidth/2, windowHeight/2, 3, 3, 25);
-  mainIsland = new Island(island1map, sandImg, oceanImg, grassImg);
+  mainIsland = new Island(island1grid, oceanImg, sandImg, grassImg);
 }
 
 // draw
@@ -150,6 +147,11 @@ function draw() {
     buttonOne.display();
     buttonTwo.display();
   }
+  if (state === "play") { 
+    mainIsland.display();
+    player.move();
+    player.display();
+  }
   if (state === "htp") {
     backButton.display();
     practiceButton.display();
@@ -159,6 +161,9 @@ function draw() {
     text("Player:", 0, 25);
     text("Map:", 0, 150);
     text("Combat:", 0, 275);
+    text("Stealth:", 0, 400);
+    text("Shop:", 0, 450);
+    text("Devloper:", 0, 550);
     fill("black");
     // Player Contorls
     text("Use WASD to move", 10, 50);
@@ -172,14 +177,17 @@ function draw() {
     text("Use X to zoom out", 10, 250);
     // Combat Controls
     text("Use Y to do basic attack", 10, 300);
-    text("Use B to do Block", 10, 325);
+    text("Use B to Block", 10, 325);
     text("Use C to use Basic Skill", 10, 350);
     text("Use Q to use Secendary Skill", 10, 375);
-  }
-  if (state === "play") { 
-    player.move();
-    player.display();
-    mainIsland.display();
+    // Stealth Controls
+    text("Use F to sneak", 10, 425);
+    // Shopping Controls
+    text("Use Arrow Keys to Browse Items", 10, 475);
+    text("Use G to open Shop", 10, 500);
+    text("Use U to Select", 10, 525);
+    // Devolper Console
+    text("Use / to start entering a command", 10, 575);
   }
   if (state === "practice") {
     fill("blue");
