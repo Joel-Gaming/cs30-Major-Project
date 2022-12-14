@@ -72,21 +72,21 @@ class Island {
   }
 
   display() {
-    let cellWidth = width / this.theIsland[0].length;
-    let cellHeight = height / this.theIsland.length;
     for (let y=0; y<this.theIsland.length; y++) {
+      let cellWidth = width / this.theIsland[y].length;
+      let cellHeight = height / this.theIsland.length;
       for (let x=0; x<this.theIsland[y].length; x++) {
         if (this.theIsland[y][x] === 0) {
           // fill("white");
-          image(this.waterIMG, y*cellWidth, x*cellHeight, cellWidth, cellHeight);
+          image(this.waterIMG);
         }
         else if (this.theIsland[y][x] === 1) {
           // fill("black");
-          image(this.sandIMG, y*cellWidth, x*cellHeight, cellWidth, cellHeight);
+          image(this.sandIMG);
         }
         else if (this.theIsland[y][x] === 2) {
           // fill("green");
-          image(this.grassIMG, y*cellWidth, x*cellHeight, cellWidth, cellHeight);
+          image(this.grassIMG);
         }
         // rect(x*cellWidth, y*cellHeight, cellWidth, cellHeight);
       }

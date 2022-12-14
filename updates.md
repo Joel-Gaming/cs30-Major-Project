@@ -30,3 +30,6 @@ I made my temoarary title bigger
 
 ### December 13th 2022 V 0.3.2
 Added more information to How To Play
+
+### December 14th 2022 V 0.3.3
+Made everything be in there how to play section
