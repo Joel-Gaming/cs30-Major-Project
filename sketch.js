@@ -162,7 +162,7 @@ function draw() {
     text("Map:", 0, 150);
     text("Combat:", 0, 275);
     text("Stealth:", 0, 400);
-    text("Shop:", 0, 450);
+    text("Shop:", 0, 475);
     text("Devloper:", 0, 575);
     fill("black");
     // Player Contorls
@@ -182,11 +182,11 @@ function draw() {
     text("Use Q to use Secendary Skill", 10, 375);
     // Stealth Controls
     text("Use F to sneak", 10, 425);
+    text("Use T to toss a coin", 10, 450);
     // Shopping Controls
-    text("Use Arrow Keys to Browse Items", 10, 475);
-    text("Use G to open Shop", 10, 500);
-    text("Use U to Select", 10, 525);
-    text("Use T to toss a coin", 10, 550);
+    text("Use Arrow Keys to Browse Items", 10, 500);
+    text("Use G to open Shop", 10, 525);
+    text("Use U to Select", 10, 550);
     // Devolper Console
     text("Use / to start entering a command", 10, 600);
     
