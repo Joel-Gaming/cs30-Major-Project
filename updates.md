@@ -33,3 +33,8 @@ Added more information to How To Play
 
 ### December 14th 2022 V 0.3.3
 Made everything be in there how to play section
+
+### December 15th 2022 V 0.3.4
+I tried to get island to display no luck
+
+### December
