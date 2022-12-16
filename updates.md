@@ -37,4 +37,5 @@ Made everything be in there how to play section
 ### December 15th 2022 V 0.3.4
 I tried to get island to display no luck
 
-### December
+### December 16th 2022 V 0.3.5
+Today i made Propposal up to date

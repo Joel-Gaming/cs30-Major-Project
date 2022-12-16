@@ -20,7 +20,7 @@ This section will show you how to tell what has been completed, what is being wo
     - Move Function (✓),
     - Display Function (✓)
 - World ( )
-    - Main island ( )
+    - Main island (X)
         - Bank Outside ( ),
         - Shop Outside ( ),
         - Police Station ( ),
