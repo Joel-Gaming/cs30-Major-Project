@@ -78,15 +78,15 @@ class Island {
       for (let x=0; x<this.theIsland[y].length; x++) {
         if (this.theIsland[y][x] === 0) {
           // fill("white");
-          image(this.waterIMG);
+          image(this.waterIMG, x*cellWidth, y*cellHeight, cellWidth, cellHeight);
         }
         else if (this.theIsland[y][x] === 1) {
           // fill("black");
-          image(this.sandIMG);
+          image(this.sandIMG, x*cellWidth, y*cellHeight, cellWidth, cellHeight);
         }
         else if (this.theIsland[y][x] === 2) {
           // fill("green");
-          image(this.grassIMG);
+          image(this.grassIMG, x*cellWidth, y*cellHeight, cellWidth, cellHeight);
         }
         // rect(x*cellWidth, y*cellHeight, cellWidth, cellHeight);
       }
