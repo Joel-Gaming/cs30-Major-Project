@@ -71,20 +71,20 @@ class Island {
     this.grassIMG = grassimg;
   }
 
-  display() {
+  display(tempDetails) {
+    let cellWidth = tempDetails[0];
+    let cellHeight = tempDetails[1];
     for (let y=0; y<this.theIsland.length; y++) {
-      let cellWidth = this.theIsland[y].length/windowWidth;
-      let cellHeight = this.theIsland.length/windowHeight;
       for (let x=0; x<this.theIsland[y].length; x++) {
-        if (this.theIsland[y][x] === 0) {
+        if (this.theIsland[y, x] === 0) {
           // fill("white");
           image(this.waterIMG, x*cellWidth, y*cellHeight, cellWidth, cellHeight);
         }
-        else if (this.theIsland[y][x] === 1) {
+        else if (this.theIsland[y, x] === 1) {
           // fill("black");
           image(this.sandIMG, x*cellWidth, y*cellHeight, cellWidth, cellHeight);
         }
-        else if (this.theIsland[y][x] === 2) {
+        else if (this.theIsland[y, x] === 2) {
           // fill("green");
           image(this.grassIMG, x*cellWidth, y*cellHeight, cellWidth, cellHeight);
         }
@@ -103,6 +103,7 @@ let backButton;
 let practiceButton;
 let player;
 let mainIsland;
+let tempDetails;
 
 // photos
 let oceanImg;
@@ -110,14 +111,15 @@ let sandImg;
 let grassImg;
 
 // Island layouts
-let island1grid = [[1111111111111111],
-  [1222222222222221],
-  [1222111111112221],
-  [1222100000012221],
-  [1222100000012221],
-  [1222111111112221],
-  [1222222222222221],
-  [1111111111111111]];
+let island1grid = [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+  [1, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 1],
+  [1, 2, 2, 2, 1, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 1],
+  [1, 2, 2, 2, 1, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 1],
+  [1, 2, 2, 2, 1, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 1],
+  [1, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 1],
+  [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]];
 
 // preload
 function preload() {
@@ -147,8 +149,9 @@ function draw() {
     buttonOne.display();
     buttonTwo.display();
   }
-  if (state === "play") { 
-    mainIsland.display();
+  if (state === "play") {
+    tempDetails = setCellDetails(mainIsland.theIsland);
+    mainIsland.display(tempDetails);
     player.move();
     player.display();
   }
@@ -215,4 +218,14 @@ function mousePressed() {
       state = "practice";
     }
   }  
+}
+
+function setCellDetails(theIsland) {
+  let results = []; 
+  for (let y = 0; y<theIsland.length; y++) {
+    let cellWidth = theIsland[y].length;
+    let cellHeight = theIsland.length;
+    results = [[cellWidth], [cellHeight]];
+  }
+  return results;
 }

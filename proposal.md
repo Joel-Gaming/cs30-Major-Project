@@ -21,9 +21,7 @@ This section will show you how to tell what has been completed, what is being wo
     - Display Function (✓)
 - World ( )
     - Main island (X)
-        - Bank Outside ( ),
-        - Shop Outside ( ),
-        - Police Station ( ),
+        - Display ( ),
 
 ## Nice To Have List
 This section will be split into Smaller sections so everyting is with items that are for that section 
@@ -31,6 +29,7 @@ This section will be split into Smaller sections so everyting is with items that
 ### Win and Lose Screen
 - Lose Screen ( )
     - Bad Trophy( ),
+
 - Win Screen ( )
     - Fireworks class ( ),
     - Good Trophy ( )
@@ -38,21 +37,26 @@ This section will be split into Smaller sections so everyting is with items that
 ### World + Map
 
 - Other Potentail World Areas ( )
-    - Sancutary Island ( )
+    - Main Island ( )
+        - Bank Outside ( ),
+        - Shop Outside ( ),
+        - Police Station ( ),
+    - Sancutary Island ( )        
         - Hotel ( ),
         - Pool ( ),
-    - Prison Island ( )
+    - Prison Island ( ) 
         - Gaurd Center ( ),
         - Yard ( ),
         - Cell Block ( ),
         - Cafateria ( ),
         - Medical ( ),
-    - Final Boss Island ( )
+    - Final Boss Island ( ) 
         - Aprils House ( ),
         - Joels House ( ),
         - Lizzys House ( ),
         - Madis House ( ),
         - Elsas House ( )
+
 - World Map ( )
     - Player Location ( ),
     - Boss Locations ( ),
