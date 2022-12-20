@@ -2,7 +2,6 @@
 // November 23rd 2022
 // Joel Penner
 
-
 // classes
 class Button {
   constructor(x, y, width, height) {
@@ -166,7 +165,7 @@ function draw() {
     text("Combat:", 0, 275);
     text("Stealth:", 0, 400);
     text("Shop:", 0, 475);
-    text("Devloper:", 0, 575);
+    text("Developer:", 0, 575);
     fill("black");
     // Player Contorls
     text("Use WASD to move", 10, 50);
