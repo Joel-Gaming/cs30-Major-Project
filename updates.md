@@ -39,3 +39,6 @@ I tried to get island to display no luck
 
 ### December 16th 2022 V 0.3.5
 Today i made Propposal up to date
+
+### December 20th 2022 V 0.3.6
+Today I moved things that I am pretty sure I will not get to from Need To Haves to Nice to Haves witch are the win and lose screen

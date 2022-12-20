@@ -73,8 +73,8 @@ class Island {
 
   display() {
     for (let y=0; y<this.theIsland.length; y++) {
-      let cellWidth = width / this.theIsland[y].length;
-      let cellHeight = height / this.theIsland.length;
+      let cellWidth = this.theIsland[y].length/windowWidth;
+      let cellHeight = this.theIsland.length/windowHeight;
       for (let x=0; x<this.theIsland[y].length; x++) {
         if (this.theIsland[y][x] === 0) {
           // fill("white");

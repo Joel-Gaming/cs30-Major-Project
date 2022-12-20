@@ -24,14 +24,16 @@ This section will show you how to tell what has been completed, what is being wo
         - Bank Outside ( ),
         - Shop Outside ( ),
         - Police Station ( ),
+
+## Nice To Have List
+This section will be split into Smaller sections so everyting is with items that are for that section 
+
+### Win and Lose Screen
 - Lose Screen ( )
     - Bad Trophy( ),
 - Win Screen ( )
     - Fireworks class ( ),
     - Good Trophy ( )
-
-## Nice To Have List
-This section will be split into Smaller sections so everyting is with items that are for that section 
 
 ### World + Map
 
