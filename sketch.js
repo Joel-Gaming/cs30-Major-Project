@@ -4,7 +4,7 @@
 
 // classes
 class Button {
-  constructor(x, y, width, height) {
+  constructor(x, y, width, height, color1, color2) {
     this.x = x;
     this.y = y;
     this.width = width;
@@ -103,6 +103,10 @@ let practiceButton;
 let player;
 let mainIsland;
 let tempDetails;
+let kanamiCode = ["Up", "Up", "Down", "Down", "Left", "Right", "Left", "Right", "B", "A"];
+let enteredCode = [];
+let enteredDetails = [];
+let codeButton;
 
 // photos
 let oceanImg;
@@ -136,6 +140,7 @@ function setup() {
   practiceButton = new Button(windowWidth-150, windowHeight-50, 150, 50);
   player = new Player(windowWidth/2, windowHeight/2, 3, 3, 25);
   mainIsland = new Island(island1grid, oceanImg, sandImg, grassImg);
+  codeButton = new Button(0, 10, 50, 20);
 }
 
 // draw
@@ -153,6 +158,7 @@ function draw() {
     mainIsland.display(tempDetails);
     player.move();
     player.display();
+    codeButton.display();
   }
   if (state === "htp") {
     backButton.display();
@@ -198,6 +204,9 @@ function draw() {
     player.move();
     player.display();
   }
+  if (state === "win") {
+    text("You Win");
+  }
 }
 
 function mousePressed() {
@@ -215,6 +224,14 @@ function mousePressed() {
     }
     if (practiceButton.isInside(mouseX, mouseY)) {
       state = "practice";
+    }
+  }
+  if (state === "play") {
+    if (codeButton.isInside(mouseX, mouseY)) {
+      enteredCode.push(enteredDetails);
+    }
+    if (enteredCode === kanamiCode) {
+      state = "win";
     }
   }  
 }

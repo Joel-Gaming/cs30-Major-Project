@@ -42,3 +42,8 @@ Today i made Propposal up to date
 
 ### December 20th 2022 V 0.3.6
 Today I moved things that I am pretty sure I will not get to from Need To Haves to Nice to Haves witch are the win and lose screen and the Buildings for the Island
+
+## January
+
+### January 10th 2022 V 0.4.1
+I added a way to get to the win screen to show
