@@ -4,7 +4,7 @@
 
 // classes
 class Button {
-  constructor(x, y, width, height, color1, color2) {
+  constructor(x, y, width, height) {
     this.x = x;
     this.y = y;
     this.width = width;
