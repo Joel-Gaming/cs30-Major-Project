@@ -105,7 +105,6 @@ let mainIsland;
 let tempDetails;
 let kanamiCode = ["Up", "Up", "Down", "Down", "Left", "Right", "Left", "Right", "B", "A"];
 let enteredCode = [];
-let enteredDetails = [];
 let codeButton;
 
 // photos
@@ -205,7 +204,7 @@ function draw() {
     player.display();
   }
   if (state === "win") {
-    text("You Win");
+    text("You Win", windowWidth/2, 100);
   }
 }
 
@@ -228,7 +227,16 @@ function mousePressed() {
   }
   if (state === "play") {
     if (codeButton.isInside(mouseX, mouseY)) {
-      enteredCode.push(enteredDetails);
+      enteredCode.push(prompt());
+      enteredCode.push(prompt());
+      enteredCode.push(prompt());
+      enteredCode.push(prompt());
+      enteredCode.push(prompt());
+      enteredCode.push(prompt());
+      enteredCode.push(prompt());
+      enteredCode.push(prompt());
+      enteredCode.push(prompt());
+      enteredCode.push(prompt());
     }
     if (enteredCode === kanamiCode) {
       state = "win";
