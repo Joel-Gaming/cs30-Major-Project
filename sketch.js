@@ -204,6 +204,7 @@ function draw() {
     player.display();
   }
   if (state === "win") {
+    background("black");
     text("You Win", windowWidth/2, 100);
   }
 }
@@ -237,11 +238,11 @@ function mousePressed() {
       enteredCode.push(prompt());
       enteredCode.push(prompt());
       enteredCode.push(prompt());
-      if (enteredCode === kanamiCode) {
-        state = "win";
-      }
     }
   }  
+  if (enteredCode === kanamiCode && state === "play") {
+    state = "win";
+  }
 }
 
 function setCellDetails(theIsland) {
