@@ -237,9 +237,9 @@ function mousePressed() {
       enteredCode.push(prompt());
       enteredCode.push(prompt());
       enteredCode.push(prompt());
-    }
-    if (enteredCode === kanamiCode) {
-      state = "win";
+      if (enteredCode === kanamiCode) {
+        state = "win";
+      }
     }
   }  
 }
