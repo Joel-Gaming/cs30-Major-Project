@@ -242,32 +242,32 @@ function mousePressed() {
     }
   }  
 
-  if (enteredCode.length === 8) {
+  if (enteredCode.length === 10) {
     for (let i = 0; i<enteredCode.length; i++) {
-      for (let j = 0; j<kanamiCode.length; i++) {
+      for (let j = 0; j<kanamiCode.length; j++) {
         if (enteredCode[i] === "Up" && kanamiCode[j] === "Up") {
           timesTrue++;
         }
-        else if (enteredCode[i] === "Down" && kanamiCode[j] === "Down") {
+        if (enteredCode[i] === "Down" && kanamiCode[j] === "Down") {
           timesTrue++;
         }
-        else if (enteredCode[i] === "Left" && kanamiCode[j] === "Left") {
+        if (enteredCode[i] === "Left" && kanamiCode[j] === "Left") {
           timesTrue++;
         }
-        else if (enteredCode[i] === "Right" && kanamiCode[j] === "Right") {
+        if (enteredCode[i] === "Right" && kanamiCode[j] === "Right") {
           timesTrue++;
         }
-        else if (enteredCode[i] === "B" && kanamiCode[j] === "B") {
+        if (enteredCode[i] === "B" && kanamiCode[j] === "B") {
           timesTrue++;
         }
-        else if (enteredCode[i] === "A" && kanamiCode[j] === "A") {
+        if (enteredCode[i] === "A" && kanamiCode[j] === "A") {
           timesTrue++;
         }
       }
     }
 
     if (timesTrue === 10) {
-      state === "win";
+      state = "win";
     }
   }
 }
