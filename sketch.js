@@ -106,6 +106,7 @@ let tempDetails;
 let kanamiCode = ["Up", "Up", "Down", "Down", "Left", "Right", "Left", "Right", "B", "A"];
 let enteredCode = [];
 let codeButton;
+let timesTrue = 0;
 
 // photos
 let oceanImg;
@@ -240,10 +241,37 @@ function mousePressed() {
       enteredCode.push(prompt());
     }
   }  
-  if (enteredCode === kanamiCode && state === "play") {
-    state = "win";
+
+  if (enteredCode.length === 8) {
+    for (let i = 0; i<enteredCode.length; i++) {
+      for (let j = 0; j<kanamiCode.length; i++) {
+        if (enteredCode[i] === "Up" && kanamiCode[j] === "Up") {
+          timesTrue++;
+        }
+        else if (enteredCode[i] === "Down" && kanamiCode[j] === "Down") {
+          timesTrue++;
+        }
+        else if (enteredCode[i] === "Left" && kanamiCode[j] === "Left") {
+          timesTrue++;
+        }
+        else if (enteredCode[i] === "Right" && kanamiCode[j] === "Right") {
+          timesTrue++;
+        }
+        else if (enteredCode[i] === "B" && kanamiCode[j] === "B") {
+          timesTrue++;
+        }
+        else if (enteredCode[i] === "A" && kanamiCode[j] === "A") {
+          timesTrue++;
+        }
+      }
+    }
+
+    if (timesTrue === 10) {
+      state === "win";
+    }
   }
 }
+
 
 function setCellDetails(theIsland) {
   let results = []; 

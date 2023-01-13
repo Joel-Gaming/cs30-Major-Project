@@ -19,11 +19,11 @@ This section will show you how to tell what has been completed, what is being wo
     - Constructor (✓),
     - Move Function (✓),
     - Display Function (✓)
-- World ( )
+- World ( ) I spent most of my time on this but it would not work
     - Main island (X)
         - Display ( ),
-- Win Screen ( )
-    - Show ( )
+- Win Screen (✓)
+    - Show (✓)
 
 ## Nice To Have List
 This section will be split into Smaller sections so everyting is with items that are for that section 
