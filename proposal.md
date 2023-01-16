@@ -23,7 +23,7 @@ This section will show you how to tell what has been completed, what is being wo
     - Main island (X)
         - Display (X)
 - Win Screen (✓)
-    - Show (✓)
+    - Display (✓)
 
 ## Nice To Have List
 This section will be split into Smaller sections so everyting is with items that are for that section 
