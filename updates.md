@@ -1,5 +1,9 @@
 # Update log
 
+## Version Hystory
+Closed Beta = V 0.1 to V 0.4
+Open Beta = V 1.0 to V _._
+
 ## November
 
 ### November 23rd 2022 V 0.1
@@ -45,5 +49,8 @@ Today I moved things that I am pretty sure I will not get to from Need To Haves 
 
 ## January
 
-### January 10th 2022 V 0.4.1
+### January 10th 2023 V 0.4
 I added a way to get to the win screen to show
+
+### January 16th 2023 V 1.0
+Got win screen to Show

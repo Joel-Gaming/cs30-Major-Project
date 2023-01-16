@@ -19,9 +19,9 @@ This section will show you how to tell what has been completed, what is being wo
     - Constructor (✓),
     - Move Function (✓),
     - Display Function (✓)
-- World ( ) I spent most of my time on this but it would not work
+- World (X) I spent most of my time on this but it would not work
     - Main island (X)
-        - Display ( ),
+        - Display (X)
 - Win Screen (✓)
     - Show (✓)
 
