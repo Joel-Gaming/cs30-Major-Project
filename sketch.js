@@ -266,6 +266,10 @@ function mousePressed() {
       }
     }
 
+    if (timesTrue > 10) {
+      timesTrue = 10;
+    }
+
     if (timesTrue === 10) {
       state = "win";
     }
