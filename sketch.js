@@ -247,18 +247,23 @@ function mousePressed() {
       for (let j = 0; j<kanamiCode.length; j++) {
         if (enteredCode[i] === "Up" && kanamiCode[j] === "Up") {
           timesTrue++;
+          i++;
         }
         if (enteredCode[i] === "Down" && kanamiCode[j] === "Down") {
           timesTrue++;
+          i++;
         }
         if (enteredCode[i] === "Left" && kanamiCode[j] === "Left") {
           timesTrue++;
+          i++;
         }
         if (enteredCode[i] === "Right" && kanamiCode[j] === "Right") {
           timesTrue++;
+          i++;
         }
         if (enteredCode[i] === "B" && kanamiCode[j] === "B") {
           timesTrue++;
+          i++;
         }
         if (enteredCode[i] === "A" && kanamiCode[j] === "A") {
           timesTrue++;
@@ -266,9 +271,9 @@ function mousePressed() {
       }
     }
 
-    if (timesTrue > 10) {
-      timesTrue = 10;
-    }
+    // if (timesTrue > 10) {
+    // timesTrue = 10;
+    //}
 
     if (timesTrue === 10) {
       state = "win";
